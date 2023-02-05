@@ -28,12 +28,12 @@ public class RedisConfig {
     public RedisTemplate<String,Object> redisTemplate() {
         RedisTemplate<String,Object> template = new RedisTemplate<>();
         template.setConnectionFactory(connectionFactory());
-//        template.setKeySerializer(new StringRedisSerializer());
-//        template.setHashKeySerializer(new StringRedisSerializer());
-//        template.setHashKeySerializer(new JdkSerializationRedisSerializer());
-//        template.setValueSerializer(new JdkSerializationRedisSerializer());
-//        template.setEnableTransactionSupport(true);
-//        template.afterPropertiesSet();
+        template.setKeySerializer(new StringRedisSerializer());
+        template.setHashKeySerializer(new StringRedisSerializer());
+        template.setHashKeySerializer(new JdkSerializationRedisSerializer());
+        template.setValueSerializer(new JdkSerializationRedisSerializer());
+        template.setEnableTransactionSupport(true);
+        template.afterPropertiesSet();
         return  template;
     }
 }
