@@ -18,7 +18,6 @@ class SpringDataRedisDemoApplicationTests {
 	@Test
 	void contextLoads() {
 		Logger.info("Test case executing...");
-		Logger.info("Test case executing second log statement...");
 		assertEquals(true,true);
 	}
 
